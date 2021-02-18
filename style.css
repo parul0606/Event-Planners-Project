@@ -1,0 +1,122 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	background-color: black;
+	overflow-x: hidden;
+}
+header{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('balloon.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:100vh;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+.row{
+	max-width: 1180px;
+	margin:0 auto;
+}
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.main-nav{
+	float:right;
+	margin-top: 60px;
+}
+.main-nav li{
+	font-family: 'Playball';
+	display:inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: black ;
+	text-decoration: none;
+	font-size: 120%;
+	font-weight: bold;
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid #DAA520 ;
+}
+.main-content-header{
+	font-family: 'Playball';
+	width:1180px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+h1{
+	color: black;
+	font-size: 240%;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2;
+
+}
+.btn-a{
+	color:black;
+	margin-right: 15px;
+	border:2px solid #DAA520;
+}
+.btn-a:hover{
+	background-color: #fff;
+}
+.btn-b{
+	color:black;
+	border:2px solid #DAA520;
+	font-weight: bold;
+}
+.btn-b:hover{
+	background-color:white;
+}
+.colorchange{
+	animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+	0%{color:red;}
+	25%{color:white;}
+	50%{color:#bf55ec;;}
+	100%{color:yellow;}
+}
+.footer {
+			color:#DAA520; 
+ 			 padding: 20px;
+  			text-align: center;
+  			background: black;
+			display: block;
+			text-decoration: none;
+			
+		}
+
+		.foot a{
+			color: #DAA520;
+			text-decoration: none;
+			padding-right: 20px;
+
+		}
